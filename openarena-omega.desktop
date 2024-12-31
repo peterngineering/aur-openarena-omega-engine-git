@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=OpenArena (OmegA engine)
+Exec=openarena-omega
+Icon=openarena-omega
+Type=Application
+Comment=A Quake3-based FPS Game (With OmegA engine)
+Categories=Game;ActionGame;

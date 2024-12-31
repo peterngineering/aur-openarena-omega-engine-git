@@ -1,0 +1,24 @@
+#!/bin/bash
+
+err="ERROR: OpenArena is not installed, please check the dependencies"
+
+# This is needed because there are different openarena packages
+if [ -d "/opt/openarena" ]; then
+	FS_BASEPATH="/opt/openarena"
+elif [ -d "/usr/lib/openarena" ]; then
+	FS_BASEPATH="/usr/lib/openarena"
+elif [ -d "/usr/share/openarena" ]; then
+	FS_BASEPATH="/usr/share/openarena"
+else
+	echo "${err}"
+	exit 1
+fi
+
+if [ -n "$FS_BASEPATH" ]; then
+	echo "OpenArena folder found at: $FS_BASEPATH"
+	/usr/bin/omega${1}-x64 +set fs_basepath "${FS_BASEPATH}"
+	exit
+else
+	echo "${err}"
+	exit 1
+fi
