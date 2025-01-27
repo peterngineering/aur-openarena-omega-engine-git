@@ -15,7 +15,7 @@ source=("https://github.com/Bishop-333/OmegA-engine/releases/download/v${pkgver}
     'openarena-omega-vulkan.desktop'
     'openarena-omega.png'
 )
-sha256sums=('94ae81f921d379845ffdf492854aabb7deda8da216f825b1d225068ae31ccd64'
+sha256sums=('caea7c6751a0368f27c8e2d67833577603e9386e99634ca49196d6e9e4576d97'
     'fdbc32d33962b508728e0c52147a90dae340270efa57c421c9811d89a92b3e31'
     'a6aa64945ca74e073e48926a201e6c0ee21f7ccdf689e2a08abe981e62a11016'
     '857b5c18e37a3bbf866feb3a69c8b0461d5b50643205fd1620412c59751ed9d0'
