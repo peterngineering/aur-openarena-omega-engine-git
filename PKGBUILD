@@ -1,7 +1,7 @@
 # Maintainer: P3te Rngineer
 pkgname=openarena-omega-engine-git
 pkgver=v3.3.9.r31.g5546508
-pkgrel=1
+pkgrel=2
 pkgdesc="An unofficial fork of the Quake3e engine for OpenArena"
 arch=('x86_64')
 url="https://github.com/Bishop-333/OmegA-engine"
@@ -14,13 +14,11 @@ conflicts=('openarena-quake3e' 'openarena-omega-engine-bin' 'openarena-complete-
 source=('git+https://github.com/Bishop-333/OmegA-engine'
     'openarena-omega'
     'openarena-omega.desktop'
-    'openarena-omega-vulkan.desktop'
     'openarena-omega.png'
 )
 sha256sums=('SKIP'
-    'f3be6a1af3925289cf286e14785691f2687873fbbe028bf12034bd68060a0db0'
+    '7a7afbd09fb18a61c32b67f99bc439a851063d80bd5a63059c62e4262ae4c44a'
     'a6aa64945ca74e073e48926a201e6c0ee21f7ccdf689e2a08abe981e62a11016'
-    '857b5c18e37a3bbf866feb3a69c8b0461d5b50643205fd1620412c59751ed9d0'
     '942e791410a95268251a144494d09fa9f6555e847880f12ee802587aa50f4972')
 
 pkgver() {
@@ -44,5 +42,4 @@ install -Dm755 renderer_vulkan_x86_64.so "${pkgdir}/opt/openarena/renderer_vulka
 install -Dm755 "$srcdir"/openarena-omega "${pkgdir}/usr/bin/openarena-omega"
 install -Dm644 "$srcdir"/openarena-omega.png "$pkgdir"/usr/share/pixmaps/openarena-omega.png
 install -Dm644 "$srcdir"/openarena-omega.desktop "$pkgdir"/usr/share/applications/openarena-omega.desktop
-install -Dm644 "$srcdir"/openarena-omega-vulkan.desktop "$pkgdir"/usr/share/applications/openarena-omega-vulkan.desktop
 }
